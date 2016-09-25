@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SQPresentViewController.h"
+#import "SQAlert.h"
 
 @interface ViewController ()
 
@@ -16,14 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)presentAction:(UIButton *)sender {
+    SQPresentViewController *presentViewController = [SQPresentViewController presentViewController];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:presentViewController];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
+- (IBAction)showAlert:(UIButton *)sender {
+    [SQAlert showAlertWithTitle:nil message:@"hello" confirmHandle:nil cancleHandle:nil];
+}
 
 @end

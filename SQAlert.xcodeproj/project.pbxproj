@@ -13,6 +13,8 @@
 		9A0901121D94F948005EA4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0901101D94F948005EA4AE /* Main.storyboard */; };
 		9A0901141D94F948005EA4AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0901131D94F948005EA4AE /* Assets.xcassets */; };
 		9A0901171D94F948005EA4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0901151D94F948005EA4AE /* LaunchScreen.storyboard */; };
+		9A0901201D94FBBF005EA4AE /* SQPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09011F1D94FBBF005EA4AE /* SQPresentViewController.m */; };
+		9A0901271D94FC51005EA4AE /* SQAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0901261D94FC51005EA4AE /* SQAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		9A0901131D94F948005EA4AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0901161D94F948005EA4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0901181D94F948005EA4AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A09011E1D94FBBF005EA4AE /* SQPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPresentViewController.h; sourceTree = "<group>"; };
+		9A09011F1D94FBBF005EA4AE /* SQPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPresentViewController.m; sourceTree = "<group>"; };
+		9A0901251D94FC51005EA4AE /* SQAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAlert.h; sourceTree = "<group>"; };
+		9A0901261D94FC51005EA4AE /* SQAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,13 @@
 		9A0901061D94F948005EA4AE /* SQAlert */ = {
 			isa = PBXGroup;
 			children = (
+				9A0901241D94FC51005EA4AE /* Alert */,
 				9A09010A1D94F948005EA4AE /* AppDelegate.h */,
 				9A09010B1D94F948005EA4AE /* AppDelegate.m */,
 				9A09010D1D94F948005EA4AE /* ViewController.h */,
 				9A09010E1D94F948005EA4AE /* ViewController.m */,
+				9A09011E1D94FBBF005EA4AE /* SQPresentViewController.h */,
+				9A09011F1D94FBBF005EA4AE /* SQPresentViewController.m */,
 				9A0901101D94F948005EA4AE /* Main.storyboard */,
 				9A0901131D94F948005EA4AE /* Assets.xcassets */,
 				9A0901151D94F948005EA4AE /* LaunchScreen.storyboard */,
@@ -77,6 +86,15 @@
 				9A0901081D94F948005EA4AE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A0901241D94FC51005EA4AE /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				9A0901251D94FC51005EA4AE /* SQAlert.h */,
+				9A0901261D94FC51005EA4AE /* SQAlert.m */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0901271D94FC51005EA4AE /* SQAlert.m in Sources */,
+				9A0901201D94FBBF005EA4AE /* SQPresentViewController.m in Sources */,
 				9A09010F1D94F948005EA4AE /* ViewController.m in Sources */,
 				9A09010C1D94F948005EA4AE /* AppDelegate.m in Sources */,
 				9A0901091D94F948005EA4AE /* main.m in Sources */,
@@ -219,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -260,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -273,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 28J88G3NGL;
 				INFOPLIST_FILE = SQAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuanche01.SQAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 28J88G3NGL;
 				INFOPLIST_FILE = SQAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuanche01.SQAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +332,7 @@
 				9A09011D1D94F948005EA4AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
