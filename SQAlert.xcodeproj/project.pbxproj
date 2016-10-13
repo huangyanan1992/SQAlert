@@ -15,6 +15,8 @@
 		9A0901171D94F948005EA4AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0901151D94F948005EA4AE /* LaunchScreen.storyboard */; };
 		9A0901201D94FBBF005EA4AE /* SQPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09011F1D94FBBF005EA4AE /* SQPresentViewController.m */; };
 		9A0901271D94FC51005EA4AE /* SQAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0901261D94FC51005EA4AE /* SQAlert.m */; };
+		9A1C18DD1DAB993400C9FEC3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1C18DC1DAB993400C9FEC3 /* ViewController2.m */; };
+		9A2F6EBC1D98C8ED00AE6CF9 /* SQAlert_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F6EBB1D98C8ED00AE6CF9 /* SQAlert_swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		9A09011F1D94FBBF005EA4AE /* SQPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPresentViewController.m; sourceTree = "<group>"; };
 		9A0901251D94FC51005EA4AE /* SQAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAlert.h; sourceTree = "<group>"; };
 		9A0901261D94FC51005EA4AE /* SQAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAlert.m; sourceTree = "<group>"; };
+		9A1C18DB1DAB993400C9FEC3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		9A1C18DC1DAB993400C9FEC3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		9A2F6EBA1D98C8ED00AE6CF9 /* SQAlert-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQAlert-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A2F6EBB1D98C8ED00AE6CF9 /* SQAlert_swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQAlert_swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 				9A09010B1D94F948005EA4AE /* AppDelegate.m */,
 				9A09010D1D94F948005EA4AE /* ViewController.h */,
 				9A09010E1D94F948005EA4AE /* ViewController.m */,
+				9A1C18DB1DAB993400C9FEC3 /* ViewController2.h */,
+				9A1C18DC1DAB993400C9FEC3 /* ViewController2.m */,
 				9A09011E1D94FBBF005EA4AE /* SQPresentViewController.h */,
 				9A09011F1D94FBBF005EA4AE /* SQPresentViewController.m */,
 				9A0901101D94F948005EA4AE /* Main.storyboard */,
@@ -93,6 +101,8 @@
 			children = (
 				9A0901251D94FC51005EA4AE /* SQAlert.h */,
 				9A0901261D94FC51005EA4AE /* SQAlert.m */,
+				9A2F6EBB1D98C8ED00AE6CF9 /* SQAlert_swift.swift */,
+				9A2F6EBA1D98C8ED00AE6CF9 /* SQAlert-Bridging-Header.h */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -129,6 +139,7 @@
 					9A0901031D94F948005EA4AE = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 28J88G3NGL;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,8 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1C18DD1DAB993400C9FEC3 /* ViewController2.m in Sources */,
 				9A0901271D94FC51005EA4AE /* SQAlert.m in Sources */,
 				9A0901201D94FBBF005EA4AE /* SQPresentViewController.m in Sources */,
+				9A2F6EBC1D98C8ED00AE6CF9 /* SQAlert_swift.swift in Sources */,
 				9A09010F1D94F948005EA4AE /* ViewController.m in Sources */,
 				9A09010C1D94F948005EA4AE /* AppDelegate.m in Sources */,
 				9A0901091D94F948005EA4AE /* main.m in Sources */,
@@ -291,12 +304,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 28J88G3NGL;
 				INFOPLIST_FILE = SQAlert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuanche01.SQAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQAlert/Alert/SQAlert-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -304,12 +321,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 28J88G3NGL;
 				INFOPLIST_FILE = SQAlert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhuanche01.SQAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQAlert/Alert/SQAlert-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

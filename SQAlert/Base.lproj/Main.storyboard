@@ -34,6 +34,14 @@
                                     <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6yu-IZ-M4R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZM-7d-a7V">
+                                <frame key="frameInset" minX="167" minY="364" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="push"/>
+                                <connections>
+                                    <segue destination="52q-NT-S9a" kind="push" id="ZJw-xY-zab"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -42,6 +50,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2015.2" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="eRp-UZ-9PO">
+            <objects>
+                <viewController id="52q-NT-S9a" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="012-Bd-rWW"/>
+                        <viewControllerLayoutGuide type="bottom" id="z3M-vZ-ZhL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TkW-h9-pbw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0b-PY-sEJ">
+                                <frame key="frameInset" minX="156" minY="299" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="showAlet"/>
+                                <connections>
+                                    <action selector="showAlert:" destination="52q-NT-S9a" eventType="touchUpInside" id="np6-Ck-F2M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xq5-qg-2fl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRg-pU-Zxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681" y="135"/>
         </scene>
         <!--Present View Controller-->
         <scene sceneID="48V-mB-yOe">
